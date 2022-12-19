@@ -19,7 +19,7 @@ public class RegistrationServiceImpl implements RegistrationService {
 	@Override
 	public User save(UserRegistrationDto userRegistrationDto) 
 	{
-		User user = new User(userRegistrationDto.getFirst_name(), 
+		User user = new User(0,userRegistrationDto.getFirst_name(), 
 							 userRegistrationDto.getLast_name(),
 							 userRegistrationDto.getGender(), 
 							 userRegistrationDto.getAge(), 

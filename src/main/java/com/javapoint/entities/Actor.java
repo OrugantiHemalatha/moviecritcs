@@ -26,6 +26,8 @@ public class Actor
 	@JsonIgnore
 	@ManyToMany(mappedBy = "actor", fetch = FetchType.EAGER)
 	private Set<Movie> movie;
+	public Actor(int i, String string) {
+	}
 
 	public Actor() {
 		super();

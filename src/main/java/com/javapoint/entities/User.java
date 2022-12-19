@@ -1,6 +1,8 @@
 package com.javapoint.entities;
 import java.util.Collection;
 import java.util.HashSet;
+import java.util.List;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -39,9 +41,12 @@ public class User {
 	public Collection<Role> getRoles() {
 		return roles;
 	}
+	public User(int id, String first_name, String last_name, String gender, int age, String contact_number, String email, String user_name, String password) {
+		super();	
+	}
 
-	public User(String first_name, String last_name, String gender, int age, String contact_number, String email,
-			String user_name, Collection<Role> list) {
+	public User(int user_id,String first_name, String last_name, String gender, int age, String contact_number, String email,
+			String user_name, List<Role> list) {
 		super();
 		this.user_id = user_id;
 		this.first_name = first_name;
